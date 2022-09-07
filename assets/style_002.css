@@ -1,0 +1,178 @@
+/*.physician_div {*/
+/*display: none;*/
+/*}*/
+
+/*.td1 {*/
+/*width: 30%;*/
+/*}*/
+
+/*.td3 {*/
+/*width: 15%;*/
+/*}*/
+
+
+
+
+/*#map_canvas {*/
+/*width: 570px;*/
+/*height: 420px;*/
+/*}*/
+
+#form_address form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#form_address input[name="address"] {
+  width: 100%;
+  max-width: 400px;
+}
+
+#form_address input[name="center_map"] {
+  margin-left: auto;
+}
+
+h2.rp, h2.province {
+  font-size: 1.8em;
+  border-bottom: 1px solid #069;
+  color: #036;
+  margin: 30px 0;
+  padding-bottom: 6px;
+}
+h2.departement {
+  margin: 30px 0;
+}
+#physicians_list {
+  /*float: right;*/
+  /*width: 95%;
+  height: 320px;
+  overflow: auto;*/
+  margin: 10px;
+}
+
+#physicians_list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 3px;
+}
+
+#physicians_list li table {
+  width: 100%;
+  padding: 0;
+  margin: 1px 0 3px 0;
+  border: 0;
+}
+#physicians_list li table td {
+  padding: 0 3px;
+  margin: 0;
+  border: 0;
+}
+
+#physicians_list li .td1, #physicians_list li .td3 {
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  #physicians_list li .td1 {
+    flex: 3;
+  }
+  #physicians_list li .td2 {
+    flex: 5;
+  }
+  #physicians_list li .td3 {
+    flex: 2;
+    text-align: right;
+  }
+}
+
+#physicians_list .departement {
+  text-align: center;
+}
+
+
+/*
+#physicians_list li {
+    width: 220px;
+    float: left;
+    margin: 8px;
+    padding: 4px 4px 4px 18px;
+    border: 1px dotted #bbb;
+    background: url(images/bullet.gif) no-repeat 8px 10px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+#physicians_list li:hover {
+    background-color: #eef;
+}
+*/
+
+
+
+#physicians_list li .physician_div {
+
+  /*width: 220px;*/
+  /*!*height: 130px;*!*/
+  /*margin: 8px;*/
+  /*padding: 4px 4px 4px 18px;*/
+  /*border: 1px dotted #bbb;*/
+  /*background-color: #f8f8f8;*/
+
+  /*vertical-align: middle;*/
+  display: none;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 1px dashed #006699;
+}
+#physicians_list li .physician_div2 {
+  text-align: left;
+}
+#physicians_list li .physician_name {
+  font-weight: bold;
+  /*color: #0788C3;*/
+}
+#physicians_list li .physician_type {
+  font-style: italic;
+  font-size: .8em;
+}
+#physicians_list li .physician_phone {
+
+}
+#physicians_list li .physician_fax {
+
+}
+#physicians_list li .physician_address {
+  font-size: .9em;
+  /*margin: 2px 8px 2px 10px;*/
+  /*padding: 2px 4px;*/
+  /*background-color: #e8e8e8;*/
+  /*border: 1px dotted #aaa;*/
+
+  margin-bottom: 15px;
+
+  /*margin-left: 15px;*/
+  /*padding-left: 10px;*/
+  /*border-left: 1px dashed #006699;*/
+
+}
+#physicians_list .postal_code {
+  color: #393;
+}
+
+div.physician_map_box {
+  width: 250px;
+}
+
+.physician_row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 699px) {
+  .physician_row {
+    flex-direction: column;
+  }
+}
